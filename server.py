@@ -90,15 +90,14 @@ def predict():
         t = ' '.join(map(str, value))
         if (t == 1):
             print ("Congratulations Your are Selected")
-            t='Selected'
+           
         else:
             print ("Sorry You are Not Selected")
-            t='Not Selected'
-
-        return render_template('index1.html',t='You are {}'.format(t))
+           
+        return render_template('index1.html',t='If 0 You are not Selected and If 1 You are Selected : {}'.format(t))
 
     else:
-        return render_template('index.html', t='You are {}'.format(t))
+        return render_template('index.html', t='If 0 You are not Selected and If 1 You are Selected : {}'.format(t))
 
 
 if __name__ == '__main__':
