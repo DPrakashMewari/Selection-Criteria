@@ -94,7 +94,7 @@ def predict():
         else:
             print ("Sorry You are Not Selected")
            
-        return render_template('index1.html',t='If 0 You are not Selected and If 1 You are Selected : {}'.format(t))
+        return render_template('result.html',t='If 0 You are not Selected and If 1 You are Selected : {}'.format(t))
 
     else:
         return render_template('index.html', t='If 0 You are not Selected and If 1 You are Selected : {}'.format(t))
